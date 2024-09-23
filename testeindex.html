@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Scream</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html{
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .welcome-container{
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px, rgba(255,255,255, 0.3);
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 0 0 20px #00d2ff, 0 0 40px #3a7bd5;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        p{
+            font-size: 1.2rem;
+            color: #d1e8e2;
+            margin-top: 20px;
+        }
+
+        @keyframes glow {
+            from{
+                text-shadow: 0 0 20px #00d2ff, 0 0 40px #3a7bd5;
+            }
+            to {
+                text-shadow: 0 0 30px #00d2ff, 0 0 60px #3a7bd5;
+            }
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: #fff;
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.5s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container"> 
+        <h1>Welcome</h1>
+        <p>Explore the future whithus.</p>
+        <button class="btn">Get started</button>
+    </div>
+</body>
+</html>
